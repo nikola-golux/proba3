@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="msapplication-tap-highlight" content="no" />
+    <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+    <link rel="stylesheet" type="text/css" href="css/ionic.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/custom.css" />
+    <title>Login</title>
+        <script type="text/javascript">
+    var url = window.location.pathname;var filename = url.substring(url.lastIndexOf('/')+1);
+    if(localStorage.login=="true" && filename == 'login.html'){window.location.href = "index.html";}
+    else if(localStorage.login=="false" && filename != 'login.html'){window.location.href = "login.html";}
+  </script>
+</head>
+<body>
+    <div class="bar bar-header">
+        <h1 class="title">Login</h1>
+        <a href="signup.html" class="button button-clear button-royal">Signup</a>
+    </div>
+    <div class="bg">
+    <!-- BALF Logo -->
+    <div id="logo-container">
+        <img src="img/balf_logo.png" alt="BALF logo" height="42" width="42" class="logo">
+    </div>
+
+    <!-- BALF Login -->
+    <div class="main-wrap">
+        <div class="login-main">
+            <input type="email" placeholder="Unesite email" id="email" class="login-polje border1">
+            <input type="password" placeholder="Unesite šifru" id="password" class="login-polje border2">
+            <button class="send" id="login"></button>
+        </div>
+    </div>
+
+    <!-- Stari dizajn -->
+    <label class="item-input">
+        <span class="input-label"></span>
+        <a href="forget-password.html" class="button button-clear button-royal">Forget Password ?</a>
+    </label>
+
+    <script type="text/javascript" src="cordova.js"></script>
+    <script type="text/javascript" src="js/jq.js"></script>
+    <script type="text/javascript" src="js/auth.js"></script>
+    </div>
+</body>
+
+</html>
